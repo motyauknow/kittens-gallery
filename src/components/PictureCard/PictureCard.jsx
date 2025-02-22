@@ -1,12 +1,20 @@
-const pict = 'D:/my_coding/web-galery/public/sidim-ne-rypaemsya.png'
+import styles from '../PictureCard/PictureCard.module.css'
+import { useState } from 'react';
 
-const PictureCard = ({ pic, title, tags }) => {
+const PictureCard = ({ pic, title }) => {
+    const [fav, setFav] = useState(false);
+
+    const handleClick = () => {
+        setFav(!fav);
+    }
     return (
-        <div className="PictureCard">
-            <img src={pict}
+        <div className={ styles.pic }>
+            <img src={pic}
                  alt="Картинка"
             />
             <h3>{title}</h3>
+            <button onClick={handleClick}>{fav ? 'true' : 'false'}</button>
+            <p></p>
         </div>
     )
 };

@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar/Navbar";
-import PictureCard from "./components/PictureCard/PictureCard";
+import ImageGallery from "./components/ImageGallery/ImageGallery";
 import styles from "../src/App.module.css";
 
 const App = () => {
@@ -7,7 +7,7 @@ const App = () => {
         <>
             <div className={ styles.app }>
                 <Navbar/>
-                <PictureCard title='Я люблю карину'/>
+                <ImageGallery/>
             </div>
         </>
     )
