@@ -1,0 +1,47 @@
+.dialog {
+    border: none;
+    background-color: #3e3648;
+
+}
+
+.close {
+    background-color: #f87983;
+}
+
+.checkboxBtn {
+	display: inline-block;
+	margin: 0 5px 0 0;
+	user-select: none;
+	position: relative;
+}
+.checkboxBtn input[type=checkbox] {
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.checkboxBtn span {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 10px;
+	line-height: 30px;
+	border: 1px solid #999;
+	border-radius: 4px;
+	transition: background 0.2s ease;
+}
+
+/* Checked */
+.checkboxBtn input[type=checkbox]:checked + span {
+	background: #ffe0a6;
+}
+ 
+/* Focus */
+.focused span {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+/* Hover */
+.checkboxBtn:hover {
+	color: #666;
+}

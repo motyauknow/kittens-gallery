@@ -1,4 +1,4 @@
-import styles from '../PictureCard/PictureCard.module.css'
+import styles from './PictureCard.module.css'
 import { useState } from 'react';
 
 const PictureCard = ({ pic, title, tags }) => {

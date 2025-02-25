@@ -1,4 +1,4 @@
-import pict from '../content/sidim-ne-rypaemsya.png'
+import pict from '../content/weekend.jpg'
 
 
 export const PICTURECARDS = [
