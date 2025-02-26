@@ -6,6 +6,7 @@ import { useState } from "react";
 
 const App = () => {
     const [selectedTags, setSelectedTags] = useState([]);
+    const [searchQuery, setSearchQuery] = useState('');
 
     const handleTagChange = (tag) => {
         setSelectedTags((prevSelectedTags) => {
@@ -22,9 +23,9 @@ const App = () => {
     return (
         <>
             <div className={ styles.app }>
-                <Navbar/>
+                <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
                 <TagSelector handleTagChange={handleTagChange}/>
-                <ImageGallery selectedTags={selectedTags}/>
+                <ImageGallery selectedTags={selectedTags} searchQuery={searchQuery}/>
             </div>
         </>
     )
