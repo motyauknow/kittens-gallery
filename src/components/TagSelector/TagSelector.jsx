@@ -29,7 +29,7 @@ const TagSelector = ({ handleTagChange }) => {
 
     return (
         <>
-            <button onClick={handleOpenDialog}>Tags</button>
+            <button className={ styles.tagsBtn } onClick={handleOpenDialog}>☰ Tags</button>
 
             <dialog className={ styles.dialog } ref={dialogRef}>
                 {tagsList.map((tag) => (
