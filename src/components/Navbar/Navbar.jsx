@@ -6,7 +6,7 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
     setSearchQuery(event.target.value);
   };
 
-  console.log(searchQuery)
+  console.log(searchQuery);
 
   return (
     <div className={styles.navbar}>
@@ -26,7 +26,7 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
           onChange={handleSearchChange}
         />
       </search>
-      <button className={styles.addNew}>Add new pic!</button>
+      <button className={styles.addNew} onClick={() => alert('Maybe in the future...')}>Create account!</button>
     </div>
   );
 };
